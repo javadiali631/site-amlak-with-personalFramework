@@ -268,7 +268,7 @@
                     <a href="<?= route('home.ads', [$posts->id]) ?>" class="block-20" style="background-image: url('<?= asset($post->image) ?>');">
                     </a>
                     <div class="text mt-3 d-block">
-                        <h3 class="heading mt-3"><a href="<?= route('home.ads', [$posts->id]) ?>"><?= $post->title?></a></h3>
+                        <h3 class="heading mt-3"><a href="<?= route('home.post', [$post->id]) ?>"><?= $post->title?></a></h3>
                         <div class="meta mb-3">
                             <div><a href="<?= route('home.ads', [$posts->id]) ?>"><?= \Morilog\Jalali\Jalalian::forge($post->created_at)->format('%B %d، %Y'); ?></a></div>
                             <div><a href="<?= route('home.ads', [$posts->id]) ?>"><?= fullUsername($post->user()) ?></a></div>
